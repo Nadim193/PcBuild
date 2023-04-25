@@ -61,7 +61,15 @@
     <Compile Include="Migrations\202304211207590_seedSellerData.designer.cs">
       <DependentUpon>202304211207590_seedSellerData.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202304242152172_RecreatedTables.cs" />
+    <Compile Include="Migrations\202304242152172_RecreatedTables.designer.cs">
+      <DependentUpon>202304242152172_RecreatedTables.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\Review.cs" />
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\User_Order.cs" />
     <Compile Include="PcBuildContext.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\Product.cs" />
@@ -82,6 +90,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202304211207590_seedSellerData.resx">
       <DependentUpon>202304211207590_seedSellerData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202304242152172_RecreatedTables.resx">
+      <DependentUpon>202304242152172_RecreatedTables.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />

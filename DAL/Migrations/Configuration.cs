@@ -59,6 +59,47 @@
                     ProductId=random.Next(1,11),
                 });
             }
+            for (int i = 1; i <= 50; i++)
+            {
+                context.Users.AddOrUpdate(new Models.User
+                {
+                    Id = i,
+                    uname = Guid.NewGuid().ToString().Substring(0, 10),
+                    Password = Guid.NewGuid().ToString().Substring(0, 10),
+                    Name = Guid.NewGuid().ToString().Substring(0, 10),
+                    Email = Guid.NewGuid().ToString().Substring(0, 10),
+                    PhoneNumber = random.Next(1, 6),
+                });
+            }
+            for (int i = 1; i <= 50; i++)
+            {
+                context.UserOrders.AddOrUpdate(new Models.User_Order
+                {
+                    Id = i,
+                    Oid = random.Next(1, 9),
+                    Uid = random.Next(1, 49),
+                    PaymentBy = Guid.NewGuid().ToString().Substring(0, 10),
+                });
+            }
+            for (int i = 1; i <= 50; i++)
+            {
+                context.Carts.AddOrUpdate(new Models.Cart
+                {
+                    Id = i,
+                    uid = random.Next(1, 49),
+                    pid = random.Next(1, 9),
+                });
+            }
+            for (int i = 1; i <= 50; i++)
+            {
+                context.Reviews.AddOrUpdate(new Models.Review
+                {
+                    Id = i,
+                    review = Guid.NewGuid().ToString().Substring(0, 10),
+                    date = DateTime.Now,
+                    uid = random.Next(1, 49),
+                });
+            }
         }
     }
 }

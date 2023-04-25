@@ -10,6 +10,7 @@ namespace DAL.Models
 {
     public  class Product
     {
+        [Key]
         public int Id { get; set; }
         [Required]
         [StringLength(15)]
@@ -27,6 +28,5 @@ namespace DAL.Models
         public string SelleingBy { get; set; }
 
         public virtual Seller Seller { get; set; }
-
     }
 }

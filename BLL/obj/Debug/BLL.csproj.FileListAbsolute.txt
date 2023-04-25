@@ -12,3 +12,17 @@ G:\net\PcBuild\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
 G:\net\PcBuild\BLL\obj\Debug\BLL.csproj.CopyComplete
 G:\net\PcBuild\BLL\obj\Debug\BLL.dll
 G:\net\PcBuild\BLL\obj\Debug\BLL.pdb
+C:\Users\Nadim\Desktop\PcBuild\BLL\bin\Debug\BLL.dll
+C:\Users\Nadim\Desktop\PcBuild\BLL\bin\Debug\BLL.pdb
+C:\Users\Nadim\Desktop\PcBuild\BLL\bin\Debug\AutoMapper.dll
+C:\Users\Nadim\Desktop\PcBuild\BLL\bin\Debug\DAL.dll
+C:\Users\Nadim\Desktop\PcBuild\BLL\bin\Debug\EntityFramework.dll
+C:\Users\Nadim\Desktop\PcBuild\BLL\bin\Debug\DAL.pdb
+C:\Users\Nadim\Desktop\PcBuild\BLL\bin\Debug\DAL.dll.config
+C:\Users\Nadim\Desktop\PcBuild\BLL\bin\Debug\AutoMapper.xml
+C:\Users\Nadim\Desktop\PcBuild\BLL\bin\Debug\EntityFramework.xml
+C:\Users\Nadim\Desktop\PcBuild\BLL\obj\Debug\BLL.csproj.AssemblyReference.cache
+C:\Users\Nadim\Desktop\PcBuild\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\Users\Nadim\Desktop\PcBuild\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\Users\Nadim\Desktop\PcBuild\BLL\obj\Debug\BLL.dll
+C:\Users\Nadim\Desktop\PcBuild\BLL\obj\Debug\BLL.pdb
