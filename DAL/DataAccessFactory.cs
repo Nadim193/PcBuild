@@ -25,5 +25,21 @@ namespace DAL
         {
             return new OrderRepo();
         }
+        public static IRepoUsers<User, int, string, decimal, User> UserData()
+        {
+            return new UserRepo();
+        }
+        public static IRepoUsers<Product, int, string, int, Product> ManageProductData()
+        {
+            return new ManageProductRepo();
+        }
+        public static IRepoOrder<Order, int, Order> ManageOrderData()
+        {
+            return new ManageOrderRepo();
+        }
+        public static IRepo<Review, int, Review> ManageReviewData()
+        {
+            return new ManageReviewRepo();
+        }
     }
 }

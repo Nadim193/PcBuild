@@ -19,7 +19,6 @@ namespace DAL
         public DbSet<User_Order> UserOrders { get; set; }
         public DbSet<Cart> Carts { get; set; }
         public DbSet<Review> Reviews { get; set; }
-
-
+        public DbSet<ProductOrder> ProductOrders { get; set; }
     }
 }

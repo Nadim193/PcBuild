@@ -39,9 +39,9 @@
                 {
                     Id =i,
                     ProductName= Guid.NewGuid().ToString().Substring(0, 10),
-                    ProdcutQuantity= Guid.NewGuid().ToString().Substring(0, 10),
+                    ProdcutQuantity= random.Next(100, 500),
                     ProductCategory= Guid.NewGuid().ToString().Substring(0, 10),
-                    ProductPrice= Guid.NewGuid().ToString().Substring(0, 5),
+                    ProductPrice= random.Next(10000, 50000),
                     SelleingBy="Seller-"+random.Next(1,6),
                 });
             }
@@ -56,7 +56,7 @@
                     OrderQuantity= Guid.NewGuid().ToString().Substring(0, 10),
                     Location= Guid.NewGuid().ToString().Substring(0, 10),
                     SelleBy="Seller-" + random.Next(1,6),
-                    ProductId=random.Next(1,11),
+                    productby = random.Next(1,9),
                 });
             }
             for (int i = 1; i <= 50; i++)
@@ -88,6 +88,7 @@
                     Id = i,
                     uid = random.Next(1, 49),
                     pid = random.Next(1, 9),
+                    Quantity = random.Next(1,15)
                 });
             }
             for (int i = 1; i <= 50; i++)
@@ -98,6 +99,16 @@
                     review = Guid.NewGuid().ToString().Substring(0, 10),
                     date = DateTime.Now,
                     uid = random.Next(1, 49),
+                    pid = random.Next(1, 9),
+                });
+            }
+            for (int i = 1; i <= 50; i++)
+            {
+                context.ProductOrders.AddOrUpdate(new Models.ProductOrder
+                {
+                    Id = i,
+                    Oid = random.Next(1, 49),
+                    pid = random.Next(1, 9),
                 });
             }
         }

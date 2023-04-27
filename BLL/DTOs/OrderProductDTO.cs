@@ -12,7 +12,7 @@ namespace BLL.DTOs
 
         public SellerDTO Seller { get; set; }
 
-        public OrderProductDTO() 
+        public OrderProductDTO()
         {
             Products = new List<ProductDTO>();
         }

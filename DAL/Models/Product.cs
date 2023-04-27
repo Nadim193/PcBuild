@@ -19,14 +19,25 @@ namespace DAL.Models
         [StringLength(15)]
         public string ProductCategory {get; set; }
         [Required]
-        [StringLength(10)]
-        public string ProductPrice { get; set; }
+        public int ProductPrice { get; set; }
         [Required]
-        [StringLength(15)]
-        public string ProdcutQuantity { get; set; }
+        public int ProdcutQuantity { get; set; }
         [ForeignKey("Seller")]
         public string SelleingBy { get; set; }
 
         public virtual Seller Seller { get; set; }
+        public virtual ICollection<Cart> Carts { get; set; }
+        public virtual ICollection<Review> Reviews { get; set; }
+        public virtual ICollection<ProductOrder> ProductOrders { get; set; }
+        public virtual ICollection<Order> Orders { get; set; }
+
+
+        public Product()
+        {
+            Orders = new List<Order>();
+            ProductOrders = new List<ProductOrder>();
+            Carts = new List<Cart>();
+            Reviews = new List<Review>();
+        }
     }
 }

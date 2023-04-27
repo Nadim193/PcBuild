@@ -20,6 +20,9 @@ namespace DAL.Models
         public int uid { get; set; }
         [ForeignKey("uid")]
         public User User { get; set; }
+        public int pid { get; set; }
+        [ForeignKey("pid")]
+        public Product product { get; set; }
 
     }
 }

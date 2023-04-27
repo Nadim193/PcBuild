@@ -20,6 +20,8 @@ namespace DAL.Models
         public int pid { get; set; }
         [ForeignKey("pid")]
         public Product product { get; set; }
+        [Required]
+        public int Quantity { get; set; }
 
     }
 }

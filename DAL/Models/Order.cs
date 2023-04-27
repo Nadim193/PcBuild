@@ -22,20 +22,16 @@ namespace DAL.Models
         public string Location { get; set; }
         [ForeignKey("Seller")]
         public string SelleBy { get; set; }
-        [ForeignKey("Product")]
-        public int ProductId { get; set; }
 
         public virtual Seller Seller { get; set; }
-
-        public virtual Product Product { get; set; }
-
-
-        public virtual ICollection<Product> Products { get; set; }
+        public int productby { get; set; }
+        [ForeignKey("productby")]
+        public Product Product { get; set; }
+        public virtual ICollection<ProductOrder> ProductOrders { get; set; }
 
         public Order ()
         {
-            Products=new List<Product> ();
+            ProductOrders = new List<ProductOrder> ();
         }
-
     }
 }

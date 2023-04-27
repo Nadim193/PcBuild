@@ -25,6 +25,11 @@ namespace DAL.Models
         [Required]
         public string NidNumber  { get; set; }
 
+        public virtual ICollection<Product> Products { get; set; }
 
+        public Seller()
+        {
+            Products = new List<Product>();
+        }
     }
 }
